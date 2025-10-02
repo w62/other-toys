@@ -1,0 +1,22 @@
+# Xcode
+.DS_Store
+*.xcuserdatad
+*.xcuserstate
+DerivedData/
+*.xcarchive/
+*.ipa
+*.app
+*.o
+*.d
+*.swiftdoc
+*.swiftmodule
+*.swiftsourceinfo
+*.dsym
+
+# Swift Package Manager
+.build/
+Package.pins
+Package.resolved
+
+# Other
+*~
