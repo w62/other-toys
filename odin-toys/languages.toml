@@ -1,0 +1,37 @@
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
+
+[[language]]
+name = "rust"
+auto-format = true
+
+[[language]]
+name = "c"
+auto-format = true
+
+[[language]]
+name = "markdown"
+auto-format = true
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
+
+[[language]]
+name = "crystal"
+scope = "source.crystal"
+file-types = ["cr"]
+language-servers = ["crystalline"]
+auto-format = true # Set to true if you want auto-formatting
+comment-token = "#"
+indent = { tab-width = 2, unit = " " }
+
+[[language]]
+name = "odin"
+formatter = { command = "/opt/homebrew/bin/odinfmt", args = ["-stdin"]}
+
+[language-server.crystalline]
+command = "crystalline"
+
+[language-server.ols]
+command = "/opt/homebrew/bin/ols"
+
